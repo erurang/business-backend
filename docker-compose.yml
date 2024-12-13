@@ -10,13 +10,13 @@ services:
       - NODE_ENV=development
       - DB_HOST=db
       - DB_USER=root
-      - DB_PASSWORD=rootpassword
-      - DB_NAME=sales_management
+      - DB_PASSWORD=tjddl234
+      - DB_NAME=business_db
   db:
     image: mysql:8
     container_name: business-backend
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: sales_management
+      MYSQL_ROOT_PASSWORD: tjddl234
+      MYSQL_DATABASE: business_db
     ports:
-      - "3306:3306"
+      - "3307:3306"
